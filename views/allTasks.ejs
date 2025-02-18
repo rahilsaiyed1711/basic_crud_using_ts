@@ -1,0 +1,10 @@
+<%- include('partials/header'); -%>
+<div class="container" style="max-width: 600px; margin: auto; padding: 20px;">
+  <h1 style="text-align: center; color: #333;">All Tasks</h1>
+  <ul>
+    <% tasks.forEach(task => { %>
+      <li><strong><%= task.title %></strong> - <%= task.content %></li>
+    <% }); %>
+  </ul>
+  <%- include('partials/footer'); -%>
+</div>
